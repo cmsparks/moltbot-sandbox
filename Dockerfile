@@ -30,6 +30,8 @@ RUN npm install -g openclaw@2026.2.3 \
 RUN mkdir -p /root/.openclaw \
     && mkdir -p /root/clawd \
     && mkdir -p /root/clawd/skills
+    && mkdir -p /root/.openclaw/workspace \
+    && mkdir -p /root/.openclaw/workspace/skills
 
 # Copy startup script
 # Build cache bust: 2026-02-06-v29-sync-workspace
@@ -38,9 +40,12 @@ RUN chmod +x /usr/local/bin/start-openclaw.sh
 
 # Copy custom skills
 COPY skills/ /root/clawd/skills/
+COPY skills/ /root/.openclaw/workspace/skills/
 
 # Set working directory
 WORKDIR /root/clawd
 
 # Expose the gateway port
 EXPOSE 18789
+
+
