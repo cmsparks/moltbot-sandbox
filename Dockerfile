@@ -29,7 +29,7 @@ RUN npm install -g openclaw@2026.2.3 \
 # Legacy .clawdbot paths are kept for R2 backup migration
 RUN mkdir -p /root/.openclaw \
     && mkdir -p /root/clawd \
-    && mkdir -p /root/clawd/skills
+    && mkdir -p /root/clawd/skills \
     && mkdir -p /root/.openclaw/workspace \
     && mkdir -p /root/.openclaw/workspace/skills
 
