@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pokemon Showdown Client"
+  short_description: "Help with Pokemon Showdown Client tasks"
+  default_prompt: "Use $pokemon-showdown-client to start a random ladder battle, poll options, and submit a specific choice."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pokemon Showdown Randombattle"
+  short_description: "Help with Pokemon Showdown Randombattle tasks"
+  default_prompt: "Use $pokemon-showdown-randombattle to run one Showdown random ladder battle with my username and password."
